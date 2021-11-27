@@ -7,12 +7,15 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                josefin: ['"Josefin Sans"'],
+            },
             colors: {
                 background: '#8AD8FA',
             },
         },
         screens: {
-            sm: '640px',
+            sm: '480px',
             md: '768px',
             lg: '1024px',
             xl: '1280px',

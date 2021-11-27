@@ -1,0 +1,36 @@
+/*  buttons */
+
+.rec-arrow-right,
+.rec-arrow-left {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #272a45;
+    padding: 2rem !important;
+}
+
+.rec-arrow-right:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #272a45;
+}
+.rec.rec-arrow {
+    width: auto !important;
+    transition: all 0.3s ease;
+    font-size: 2em;
+    color: #272a45;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.jRFJkP:hover:enabled,
+.jRFJkP:focus:enabled {
+    color: #272a45 !important;
+}
+
+button.rec-dot {
+    visibility: hidden;
+}
