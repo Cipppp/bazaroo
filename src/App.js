@@ -1,20 +1,45 @@
 import './styles/output.css';
 import './App.css';
-import { Footer, Navbar, Sidebar } from './components';
-import { Homepage, Dashboard } from './pages';
+import { Footer } from './components';
+import {
+    Homepage,
+    DashboardStudents,
+    DashboardTeachers,
+    EnrollStudents,
+    StudentsMeditation,
+    TeachersMeditation,
+} from './pages';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import useWindowDimensions from './components/hooks/useWindowDimensions';
 function App() {
-    // eslint-disable-next-line
-    const { height, width } = useWindowDimensions();
-
     return (
         <Router>
-            {width > 600 ? <Navbar /> : <Sidebar />}
             <Routes>
                 <Route exact path="/" element={<Homepage />} />
-
-                <Route exact path="/dashboard" element={<Dashboard />} />
+                <Route
+                    exact
+                    path="/dashboard/students"
+                    element={<DashboardStudents />}
+                />
+                <Route
+                    exact
+                    path="/dashboard/students/enroll-students"
+                    element={<EnrollStudents />}
+                />
+                <Route
+                    exact
+                    path="/dashboard/students/students-meditation"
+                    element={<StudentsMeditation />}
+                />
+                <Route
+                    exact
+                    path="/dashboard/teachers"
+                    element={<TeachersMeditation />}
+                />
+                <Route
+                    exact
+                    path="/dashboard/teachers/teachers-meditation"
+                    element={<DashboardTeachers />}
+                />
             </Routes>
             <Footer />
         </Router>

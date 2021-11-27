@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
-import { SidebarData } from './SidebarData.js';
 import './Sidebar.css';
 import { IconContext } from 'react-icons/lib';
 
-function Navbar() {
+function Sidebar({ SidebarData }) {
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
@@ -59,4 +58,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default Sidebar;

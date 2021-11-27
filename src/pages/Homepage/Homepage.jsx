@@ -1,12 +1,45 @@
 import React from 'react';
 import { ReactComponent as HomepageImg } from '../../assets/homepage.svg';
-import { CarouselComp, Footer } from '../../components';
+import { CarouselComp, Footer, Navbar, Sidebar } from '../../components';
 import './Homepage.css';
+import useWindowDimensions from '../../components/hooks/useWindowDimensions';
+import { AiOutlineUserAdd } from 'react-icons/ai';
+import { IoMdContact } from 'react-icons/io';
+import { FiLogIn } from 'react-icons/fi';
 
 function Homepage() {
+    const { height, width } = useWindowDimensions();
+    const sidebar_data = [
+        {
+            title: 'Logare',
+            path: '#',
+            icon: <FiLogIn />,
+            cName: 'nav-text',
+        },
+        {
+            title: 'Create',
+            path: '#',
+            icon: <AiOutlineUserAdd />,
+            cName: 'nav-text',
+        },
+
+        {
+            title: 'Contact',
+            path: '#',
+            icon: <IoMdContact />,
+            cName: 'nav-text',
+        },
+    ];
+
     return (
         <>
             <div>
+                {width > 600 ? (
+                    <Navbar />
+                ) : (
+                    <Sidebar SidebarData={sidebar_data} />
+                )}
+
                 {/* Main section */}
                 <section className="grid grid-rows-2 h-screen place-items-center p-8 text-center">
                     <div>
@@ -100,7 +133,7 @@ function Homepage() {
                                 />
                                 {/* Mesaj  */}
                                 <h1 className=" pt-2">Mesaj</h1>
-                                <textarea className="w-full p-2 focus:outline-none rounded-lg  border-4 border-black" />
+                                <textarea className="w-full p-2 focus:outline-none rounded-lg border-4 border-black" />
                                 {/* button  */}
                                 <div className="btnContainer flex place-items-start justify-center mb-5">
                                     <button className="focus:outline-none bg-[#AFD0FF] rounded-3xl p-2 mt-4 font-bold tracking-wider transition ease-out duration-300">

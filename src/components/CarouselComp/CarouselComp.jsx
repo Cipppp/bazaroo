@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Carousel from 'react-elastic-carousel';
 import { CarouselCard } from '..';
 import './CarouselComp.css';
