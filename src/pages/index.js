@@ -4,3 +4,5 @@ export { default as DashboardTeachers } from './DashboardTeachers/DashboardTeach
 export { default as EnrollStudents } from './EnrollStudents/EnrollStudents';
 export { default as StudentsMeditation } from './StudentsMeditation/StudentsMeditation';
 export { default as TeachersMeditation } from './TeachersMeditation/TeachersMeditation';
+export { default as Register } from './Register/Register';
+export { default as Login } from './Login/Login';

@@ -59,7 +59,7 @@ function StudentsMeditation() {
                 {width > 600 ? (
                     <Navbar />
                 ) : (
-                    <Sidebar SidebarData={sidebar_data} />
+                    <Sidebar sidebar_data={sidebar_data} />
                 )}
                 <section className="text-xs m-6 ">
                     <div className="flex justify-between items-center pl-4 pr-4">

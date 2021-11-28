@@ -1,7 +1,6 @@
 import React from 'react';
 import DashboardImg from '../../assets/homepage.svg';
-import { IoMdSchool } from 'react-icons/io';
-import { SiGoogleclassroom } from 'react-icons/si';
+import { BiBookAlt } from 'react-icons/bi';
 import useWindowDimensions from '../../components/hooks/useWindowDimensions';
 import { Navbar, Sidebar } from '../../components';
 function Dashboard() {
@@ -10,24 +9,18 @@ function Dashboard() {
 
     const SidebarData = [
         {
-            title: 'Meditatii',
+            title: 'Meditatie',
             path: '#',
-            icon: <IoMdSchool />,
-            cName: 'nav-text',
-        },
-        {
-            title: 'Inrolari',
-            path: '#',
-            icon: <SiGoogleclassroom />,
+            icon: <BiBookAlt />,
             cName: 'nav-text',
         },
     ];
     return (
         <div>
             {/* Navbar  */}
-            {width > 600 ? <Navbar /> : <Sidebar SidebarData={SidebarData} />}
+            {width > 600 ? <Navbar /> : <Sidebar sidebar_data={SidebarData} />}
             {/* Main section */}
-            <section className="grid grid-rows-2 h-screen place-items-center p-8 text-center">
+            <section className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 h-screen place-items-center p-8 text-center">
                 <div>
                     <h1 className="font-josefin text-4xl">
                         Invatatul nu a fost niciodata mai simplu!

@@ -43,17 +43,13 @@ function EnrollStudents() {
                 {width > 600 ? (
                     <Navbar />
                 ) : (
-                    <Sidebar SidebarData={sidebar_data} />
+                    <Sidebar sidebar_data={sidebar_data} />
                 )}
                 <section className="text-xs m-6 ">
-                    <div className="flex justify-between items-center pl-4 pr-4">
+                    <div className="flex items-center pl-4 pr-4">
                         <h1 className="font-josefin text-xl font-bold">
-                            Postari
+                            Inscrierile tale
                         </h1>
-
-                        <span className="pr-3 pl-3 pt-1 pb-1 bg-[#B2EEFF]  focus:outline-none rounded-full ">
-                            <HiFilter size={25} />
-                        </span>
                     </div>
                     <ul>
                         {meditation_data.map((item, index) => {

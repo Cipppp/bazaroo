@@ -8,7 +8,7 @@ function CarouselComp() {
         { width: 1, itemsToShow: 1 },
         { width: 550, itemsToShow: 2, itemsToScroll: 2 },
         { width: 768, itemsToShow: 3 },
-        { width: 1200, itemsToShow: 4 },
+        { width: 1280, itemsToShow: 4 },
     ];
 
     const items = [
@@ -22,10 +22,14 @@ function CarouselComp() {
 
     return (
         <div>
-            <h1 className="font-josefin ml-10 mb-2 text-2xl">Pareri</h1>
+            <div className="flex justify-start items-center">
+                <h1 className="font-josefin ml-10 mb-2 text-2xl">
+                    Ce zic utilizatorii?
+                </h1>
+            </div>
             <Carousel
                 breakPoints={breakPoints}
-                className="font-josefin text-xs"
+                className="font-josefin text-xs md:text-sm"
             >
                 {items.map((item) => (
                     <CarouselCard name={item.name} message={item.message} />

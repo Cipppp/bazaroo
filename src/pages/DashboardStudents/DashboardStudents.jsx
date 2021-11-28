@@ -25,9 +25,9 @@ function Dashboard() {
     return (
         <div>
             {/* Navbar  */}
-            {width > 600 ? <Navbar /> : <Sidebar SidebarData={SidebarData} />}
+            {width > 600 ? <Navbar /> : <Sidebar sidebar_data={SidebarData} />}
             {/* Main section */}
-            <section className="grid grid-rows-2 h-screen place-items-center p-8 text-center">
+            <section className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1  h-screen place-items-center p-8 text-center">
                 <div>
                     <h1 className="font-josefin text-4xl">
                         Invatatul nu a fost niciodata mai simplu!

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactComponent as HomepageImg } from '../../assets/homepage.svg';
-import { CarouselComp, Footer, Navbar, Sidebar } from '../../components';
+import { CarouselComp, Navbar, Sidebar } from '../../components';
 import './Homepage.css';
 import useWindowDimensions from '../../components/hooks/useWindowDimensions';
 import { AiOutlineUserAdd } from 'react-icons/ai';
@@ -9,6 +9,7 @@ import { FiLogIn } from 'react-icons/fi';
 
 function Homepage() {
     const { height, width } = useWindowDimensions();
+
     const sidebar_data = [
         {
             title: 'Logare',
@@ -37,11 +38,11 @@ function Homepage() {
                 {width > 600 ? (
                     <Navbar />
                 ) : (
-                    <Sidebar SidebarData={sidebar_data} />
+                    <Sidebar sidebar_data={sidebar_data} />
                 )}
 
                 {/* Main section */}
-                <section className="grid grid-rows-2 h-screen place-items-center p-8 text-center">
+                <section className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 h-screen place-items-center p-8 text-center">
                     <div>
                         <h1 className="font-josefin text-4xl">
                             Invatatul nu a fost niciodata mai simplu!
@@ -57,20 +58,20 @@ function Homepage() {
                 </section>
 
                 {/* How does it work section */}
-                <section className="h-auto w-screen place-items-center p-5 font-josefin">
+                <section className="h-auto w-screen sm:flex sm:justify-center place-items-center p-5 sm:mt-10 font-josefin text-xs md:text-sm xl:text-base">
                     <div
-                        className="grid grid-rows-3 bg-[#272A45] rounded-3xl text-white p-2 "
+                        className="grid grid-rows-3 sm:w-10/12 md:w-8/12 bg-[#272A45] rounded-3xl text-white p-2 md:p-6 xl:p-8"
                         style={{
                             boxShadow:
                                 '-8px -24px 0px 7px  rgba(179,208,255,0.79)',
                         }}
                     >
                         {/* First row */}
-                        <div className="row-span-1 flex text-center items-center justify-center ">
+                        <div className="row-span-1 flex text-center items-center justify-center text-sm md:text-base xl:text-lg">
                             <h1 className="pb-4">Cum functioneaza ?</h1>
                         </div>
                         {/* Second row */}
-                        <div className="row-span-2 grid grid-cols-2 text-center text-xs">
+                        <div className="row-span-2 grid grid-cols-2 text-center ">
                             {/* First col */}
                             <div className="grid grid-rows-2">
                                 <div>
@@ -78,7 +79,7 @@ function Homepage() {
                                     <p>Inscrie-te ca profesor</p>
                                 </div>
                                 <div>
-                                    <button className="btn pt-1 pb-1 pr-3 pl-3 mt-2 border-solid border-2">
+                                    <button className="btn pt-1 pb-1 pr-3 pl-3 mt-2 bg-[#AFD0FF] text-black">
                                         Predau
                                     </button>
                                 </div>
@@ -91,7 +92,7 @@ function Homepage() {
                                     <p>Inscrie-te ca student</p>
                                 </div>
                                 <div>
-                                    <button className="btn pt-1 pb-1 pr-3 pl-3 mt-2 border-solid border-2">
+                                    <button className="btn pt-1 pb-1 pr-3 pl-3 mt-2 bg-[#AFD0FF] text-black">
                                         Invat
                                     </button>
                                 </div>
@@ -99,6 +100,7 @@ function Homepage() {
                         </div>
                     </div>
                 </section>
+                {/* <GlobalStyle /> */}
 
                 {/* Carousel section  */}
                 <section className="mt-16">
@@ -107,8 +109,8 @@ function Homepage() {
 
                 {/* Contact section */}
                 <section>
-                    <div>
-                        <div className="w-full p-4 items-center justify-center font-josefin text-xs contact_container">
+                    <div className="flex items-center justify-center">
+                        <div className="w-full sm:w-11/12 md:w-10/12 lg:w-8/12 p-4 items-center justify-center font-josefin text-xs md:text-sm xl:text-base contact_container">
                             <div className="text-center">
                                 <h1 className="text-xl">
                                     Intampini dificultati?{' '}
@@ -122,18 +124,18 @@ function Homepage() {
                                     type="text"
                                     autoFocus
                                     required
-                                    className="w-full p-2 focus:outline-none rounded-lg  border-4 border-black"
+                                    className="w-full p-2 focus:outline-none   border-2 border-black"
                                 />
                                 {/* Password  */}
                                 <h1 className=" pt-2">Email</h1>
                                 <input
                                     type="email"
                                     required
-                                    className="w-full p-2 focus:outline-none rounded-lg  border-4 border-black"
+                                    className="w-full p-2 focus:outline-none   border-2 border-black"
                                 />
                                 {/* Mesaj  */}
                                 <h1 className=" pt-2">Mesaj</h1>
-                                <textarea className="w-full p-2 focus:outline-none rounded-lg border-4 border-black" />
+                                <textarea className="w-full p-2 focus:outline-none  border-2 border-black" />
                                 {/* button  */}
                                 <div className="btnContainer flex place-items-start justify-center mb-5">
                                     <button className="focus:outline-none bg-[#AFD0FF] rounded-3xl p-2 mt-4 font-bold tracking-wider transition ease-out duration-300">

@@ -8,8 +8,11 @@ import {
     EnrollStudents,
     StudentsMeditation,
     TeachersMeditation,
+    Login,
+    Register,
 } from './pages';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
     return (
         <Router>
@@ -22,24 +25,26 @@ function App() {
                 />
                 <Route
                     exact
-                    path="/dashboard/students/enroll-students"
+                    path="/dashboard/students/enroll"
                     element={<EnrollStudents />}
                 />
                 <Route
                     exact
-                    path="/dashboard/students/students-meditation"
+                    path="/dashboard/students/meditation"
                     element={<StudentsMeditation />}
                 />
                 <Route
                     exact
                     path="/dashboard/teachers"
-                    element={<TeachersMeditation />}
+                    element={<DashboardTeachers />}
                 />
                 <Route
                     exact
-                    path="/dashboard/teachers/teachers-meditation"
-                    element={<DashboardTeachers />}
+                    path="/dashboard/teachers/meditation"
+                    element={<TeachersMeditation />}
                 />
+                <Route exact path="/login" element={<Login />} />
+                <Route exact path="/register" element={<Register />} />
             </Routes>
             <Footer />
         </Router>
