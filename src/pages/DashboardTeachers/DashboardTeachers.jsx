@@ -7,10 +7,10 @@ function Dashboard() {
     // eslint-disable-next-line
     const { height, width } = useWindowDimensions();
 
-    const SidebarData = [
+    const sidebar_data = [
         {
             title: 'Meditatie',
-            path: '#',
+            path: '/dashboard/teachers/meditation',
             icon: <BiBookAlt />,
             cName: 'nav-text',
         },
@@ -18,7 +18,11 @@ function Dashboard() {
     return (
         <div>
             {/* Navbar  */}
-            {width > 600 ? <Navbar /> : <Sidebar sidebar_data={SidebarData} />}
+            {width > 600 ? (
+                <Navbar sidebar_data={sidebar_data} />
+            ) : (
+                <Sidebar sidebar_data={sidebar_data} />
+            )}
             {/* Main section */}
             <section className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 h-screen place-items-center p-8 text-center">
                 <div>

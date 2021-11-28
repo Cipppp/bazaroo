@@ -689,6 +689,14 @@ video {
   margin: 1rem;
 }
 
+.m-auto{
+  margin: auto;
+}
+
+.m-20{
+  margin: 5rem;
+}
+
 .ml-10{
   margin-left: 2.5rem;
 }
@@ -751,6 +759,10 @@ video {
 
 .mr-8{
   margin-right: 2rem;
+}
+
+.ml-20{
+  margin-left: 5rem;
 }
 
 .flex{
@@ -901,6 +913,14 @@ video {
   align-self: flex-end;
 }
 
+.self-center{
+  align-self: center;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .rounded-3xl{
   border-radius: 1.5rem;
 }
@@ -1044,6 +1064,14 @@ video {
 
 .pr-10{
   padding-right: 2.5rem;
+}
+
+.pl-20{
+  padding-left: 5rem;
+}
+
+.pr-20{
+  padding-right: 5rem;
 }
 
 .text-center{
@@ -1307,6 +1335,14 @@ video {
 
   .md\:p-8{
     padding: 2rem;
+  }
+
+  .md\:pl-20{
+    padding-left: 5rem;
+  }
+
+  .md\:pr-20{
+    padding-right: 5rem;
   }
 
   .md\:text-sm{

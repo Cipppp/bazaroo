@@ -13,7 +13,7 @@ import { FaPlus } from 'react-icons/fa';
 function TeachersMeditation() {
     // eslint-disable-next-line
     const { height, width } = useWindowDimensions();
-    const [showModal, setShowModal] = useState(true);
+    const [showModal, setShowModal] = useState(false);
 
     const openModal = () => {
         setShowModal((prev) => !prev);
@@ -22,7 +22,7 @@ function TeachersMeditation() {
     const sidebar_data = [
         {
             title: 'Meditatie',
-            path: '#',
+            path: '/dashboard/teachers/meditation',
             icon: <BiBookAlt />,
             cName: 'nav-text',
         },
@@ -49,24 +49,26 @@ function TeachersMeditation() {
         <>
             <div>
                 {width > 600 ? (
-                    <Navbar />
+                    <Navbar sidebar_data={sidebar_data} />
                 ) : (
                     <Sidebar sidebar_data={sidebar_data} />
                 )}
                 <section className="text-xs m-6 ">
-                    <div className="flex items-center justify-center mb-10">
+                    <div className="w-full justify-start md:pl-20 md:pr-20">
                         <button
                             onClick={openModal}
-                            className="focus:outline-none w-10/12 bg-[#AFD0FF] rounded-3xl p-4 font-bold tracking-wider transition ease-out duration-300 flex items-center justify-center"
+                            className="focus:outline-none w-auto bg-[#AFD0FF] rounded-3xl p-4 font-bold tracking-wider transition ease-out duration-300 flex items-center justify-center"
                         >
                             <FaPlus size={14} />{' '}
                             <p className="ml-2">Adauga o meditatie noua</p>
                         </button>
                     </div>
-                    <MeditationModal
-                        showModal={showModal}
-                        setShowModal={setShowModal}
-                    />
+                    <div className="w-full flex justify-center">
+                        <MeditationModal
+                            showModal={showModal}
+                            setShowModal={setShowModal}
+                        />
+                    </div>
                     <div className="flex items-center pl-4 pr-4">
                         <h1 className="font-josefin text-xl font-bold">
                             Meditatiile tale

@@ -17,7 +17,7 @@ function StudentsMeditation() {
         },
         {
             title: 'Inrolari',
-            path: '#',
+            path: '/dashboard/students/enroll',
             icon: <SiGoogleclassroom />,
             cName: 'nav-text',
         },
@@ -57,7 +57,7 @@ function StudentsMeditation() {
         <>
             <div>
                 {width > 600 ? (
-                    <Navbar />
+                    <Navbar sidebar_data={sidebar_data} />
                 ) : (
                     <Sidebar sidebar_data={sidebar_data} />
                 )}

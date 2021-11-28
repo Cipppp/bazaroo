@@ -13,13 +13,13 @@ function Homepage() {
     const sidebar_data = [
         {
             title: 'Logare',
-            path: '#',
+            path: '/login',
             icon: <FiLogIn />,
             cName: 'nav-text',
         },
         {
             title: 'Create',
-            path: '#',
+            path: '/register',
             icon: <AiOutlineUserAdd />,
             cName: 'nav-text',
         },
@@ -36,7 +36,7 @@ function Homepage() {
         <>
             <div>
                 {width > 600 ? (
-                    <Navbar />
+                    <Navbar sidebar_data={sidebar_data} />
                 ) : (
                     <Sidebar sidebar_data={sidebar_data} />
                 )}

@@ -100,13 +100,13 @@ function Login() {
     const sidebar_data = [
         {
             title: 'Logare',
-            path: '/login',
+            path: '#',
             icon: <FiLogIn />,
             cName: 'nav-text',
         },
         {
             title: 'Create',
-            path: '#',
+            path: '/register',
             icon: <AiOutlineUserAdd />,
             cName: 'nav-text',
         },
@@ -153,7 +153,7 @@ function Login() {
         <>
             {/* Navbar  */}
             {width > 600 ? (
-                <Navbar />
+                <Navbar sidebar_data={sidebar_data} />
             ) : (
                 <Sidebar
                     sidebar_data={sidebar_data}

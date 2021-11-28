@@ -53,12 +53,12 @@ function Modal({ showModal, setShowModal }) {
                 <div
                     onClick={closeModal}
                     ref={modalRef}
-                    className="w-full h-full flex justify-center items-center"
+                    className="w-full md:w-10/12 lg:w-8/12 h-full flex justify-center items-center"
                 >
                     <animated.div style={animation} className="w-full m-2">
                         <div
                             showModal={showModal}
-                            className="bg-[#272A45] w-full h-full shadow-md text-white relative z-10 border-2 rounded-3xl"
+                            className="bg-[#272A45] w-full sm:p-6 md:p-8 lg:p-10 lg:text-base h-full shadow-md text-white relative z-10 border-2 rounded-3xl"
                         >
                             <div className="flex p-2 w-full flex-col items-center justify-center text-white">
                                 <div>

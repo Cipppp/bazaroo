@@ -153,7 +153,7 @@ function Register() {
         <>
             {/* Navbar  */}
             {width > 600 ? (
-                <Navbar />
+                <Navbar sidebar_data={sidebar_data} />
             ) : (
                 <Sidebar
                     sidebar_data={sidebar_data}

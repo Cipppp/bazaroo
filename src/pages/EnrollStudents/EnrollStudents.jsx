@@ -4,6 +4,24 @@ import useWindowDimensions from '../../components/hooks/useWindowDimensions';
 import { IoMdSchool } from 'react-icons/io';
 import { HiFilter } from 'react-icons/hi';
 import { SiGoogleclassroom } from 'react-icons/si';
+import FacebookIcon from '../../assets/facebook.svg';
+import InstagramIcon from '../../assets/instagram.svg';
+import TwitterIcon from '../../assets/twitter.svg';
+import './EnrollStudents.css';
+
+function Footer() {
+    return (
+        <>
+            <div className="container">
+                <div className="flex items-center justify-end footer">
+                    <img src={FacebookIcon} alt="" className="w-12" />
+                    <img src={InstagramIcon} alt="" className="w-12" />
+                    <img src={TwitterIcon} alt="" className="w-12" />
+                </div>
+            </div>
+        </>
+    );
+}
 
 function EnrollStudents() {
     const { height, width } = useWindowDimensions();
@@ -11,13 +29,15 @@ function EnrollStudents() {
     const sidebar_data = [
         {
             title: 'Meditatii',
-            path: '#',
+            path: '/dashboard/students/meditation',
             icon: <IoMdSchool />,
+            cName: 'nav-text',
         },
         {
             title: 'Inrolari',
-            path: '#',
+            path: '/dashboard/students/enroll',
             icon: <SiGoogleclassroom />,
+            cName: 'nav-text',
         },
     ];
     const meditation_data = [
@@ -41,7 +61,7 @@ function EnrollStudents() {
         <>
             <div>
                 {width > 600 ? (
-                    <Navbar />
+                    <Navbar sidebar_data={sidebar_data} />
                 ) : (
                     <Sidebar sidebar_data={sidebar_data} />
                 )}

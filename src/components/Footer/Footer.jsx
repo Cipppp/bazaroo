@@ -7,8 +7,8 @@ import './Footer.css';
 function Footer() {
     return (
         <>
-            <div className="container">
-                <div className="flex items-center justify-end footer">
+            <div className="footer">
+                <div className="flex items-end justify-end">
                     <img src={FacebookIcon} alt="" className="w-12" />
                     <img src={InstagramIcon} alt="" className="w-12" />
                     <img src={TwitterIcon} alt="" className="w-12" />

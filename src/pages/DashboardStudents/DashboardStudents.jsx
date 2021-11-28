@@ -8,16 +8,16 @@ function Dashboard() {
     // eslint-disable-next-line
     const { height, width } = useWindowDimensions();
 
-    const SidebarData = [
+    const sidebar_data = [
         {
             title: 'Meditatii',
-            path: '#',
+            path: '/dashboard/students/meditation',
             icon: <IoMdSchool />,
             cName: 'nav-text',
         },
         {
             title: 'Inrolari',
-            path: '#',
+            path: '/dashboard/students/enroll',
             icon: <SiGoogleclassroom />,
             cName: 'nav-text',
         },
@@ -25,7 +25,11 @@ function Dashboard() {
     return (
         <div>
             {/* Navbar  */}
-            {width > 600 ? <Navbar /> : <Sidebar sidebar_data={SidebarData} />}
+            {width > 600 ? (
+                <Navbar sidebar_data={sidebar_data} />
+            ) : (
+                <Sidebar sidebar_data={sidebar_data} />
+            )}
             {/* Main section */}
             <section className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1  h-screen place-items-center p-8 text-center">
                 <div>
