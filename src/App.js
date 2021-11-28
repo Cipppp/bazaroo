@@ -11,11 +11,11 @@ import {
     Login,
     Register,
 } from './pages';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRoute as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route exact path="/" element={<Homepage />} />
                 <Route
