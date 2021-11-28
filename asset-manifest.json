@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/bazaroo/static/css/main.9c3977f4.chunk.css",
+    "main.js": "/bazaroo/static/js/main.9dfc7558.chunk.js",
+    "main.js.map": "/bazaroo/static/js/main.9dfc7558.chunk.js.map",
+    "runtime-main.js": "/bazaroo/static/js/runtime-main.fd297276.js",
+    "runtime-main.js.map": "/bazaroo/static/js/runtime-main.fd297276.js.map",
+    "static/js/2.74d90665.chunk.js": "/bazaroo/static/js/2.74d90665.chunk.js",
+    "static/js/2.74d90665.chunk.js.map": "/bazaroo/static/js/2.74d90665.chunk.js.map",
+    "static/js/3.d869f266.chunk.js": "/bazaroo/static/js/3.d869f266.chunk.js",
+    "static/js/3.d869f266.chunk.js.map": "/bazaroo/static/js/3.d869f266.chunk.js.map",
+    "index.html": "/bazaroo/index.html",
+    "static/css/main.9c3977f4.chunk.css.map": "/bazaroo/static/css/main.9c3977f4.chunk.css.map",
+    "static/js/2.74d90665.chunk.js.LICENSE.txt": "/bazaroo/static/js/2.74d90665.chunk.js.LICENSE.txt",
+    "static/media/Homepage.css": "/bazaroo/static/media/contact.9f53977e.svg",
+    "static/media/facebook.5d603891.svg": "/bazaroo/static/media/facebook.5d603891.svg",
+    "static/media/EnrollStudents.css": "/bazaroo/static/media/footer.38a7be5e.svg",
+    "static/media/homepage.9b0262b3.svg": "/bazaroo/static/media/homepage.9b0262b3.svg",
+    "static/media/instagram.a6a5034a.svg": "/bazaroo/static/media/instagram.a6a5034a.svg",
+    "static/media/Sidebar.css": "/bazaroo/static/media/top_navbar.f3c52279.svg",
+    "static/media/twitter.84d3dade.svg": "/bazaroo/static/media/twitter.84d3dade.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd297276.js",
+    "static/js/2.74d90665.chunk.js",
+    "static/css/main.9c3977f4.chunk.css",
+    "static/js/main.9dfc7558.chunk.js"
+  ]
+}
