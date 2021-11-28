@@ -10,6 +10,8 @@ import useWindowDimensions from '../../components/hooks/useWindowDimensions';
 import { BiBookAlt } from 'react-icons/bi';
 import { FaPlus } from 'react-icons/fa';
 
+
+
 function TeachersMeditation() {
     // eslint-disable-next-line
     const { height, width } = useWindowDimensions();
@@ -53,7 +55,7 @@ function TeachersMeditation() {
                 ) : (
                     <Sidebar sidebar_data={sidebar_data} />
                 )}
-                <section className="text-xs m-6 ">
+                <section className="text-xs m-6 h-screen">
                     <div className="w-full justify-start md:pl-20 md:pr-20">
                         <button
                             onClick={openModal}

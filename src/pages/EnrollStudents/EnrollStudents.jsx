@@ -65,7 +65,7 @@ function EnrollStudents() {
                 ) : (
                     <Sidebar sidebar_data={sidebar_data} />
                 )}
-                <section className="text-xs m-6 ">
+                <section className="text-xs m-6 h-screen">
                     <div className="flex items-center pl-4 pr-4">
                         <h1 className="font-josefin text-xl font-bold">
                             Inscrierile tale

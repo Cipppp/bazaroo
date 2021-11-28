@@ -1,0 +1,11 @@
+.footer {
+    background-image: url(../../assets/footer.svg);
+    background-size: 17rem;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    font-family: 'Josefin Sans';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
