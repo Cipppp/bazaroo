@@ -17,34 +17,34 @@ function App() {
     return (
         <Router basename={process.env.PUBLIC_URL}>
             <Routes>
-                <Route exact path="/" element={<Homepage />} />
+                <Route exact path={process.env.PUBLIC_URL + "/"} element={<Homepage />} />
                 <Route
                     exact
-                    path="/dashboard/students"
+                    path={process.env.PUBLIC_URL + "/dashboard/students"}
                     element={<DashboardStudents />}
                 />
                 <Route
                     exact
-                    path="/dashboard/students/enroll"
+                    path={process.env.PUBLIC_URL + "/dashboard/students/enroll"}
                     element={<EnrollStudents />}
                 />
                 <Route
                     exact
-                    path="/dashboard/students/meditation"
+                    path={process.env.PUBLIC_URL + "/dashboard/students/meditation"}
                     element={<StudentsMeditation />}
                 />
                 <Route
                     exact
-                    path="/dashboard/teachers"
+                    path={process.env.PUBLIC_URL + "/dashboard/teachers"}
                     element={<DashboardTeachers />}
                 />
                 <Route
                     exact
-                    path="/dashboard/teachers/meditation"
+                    path={process.env.PUBLIC_URL + "/dashboard/teachers/meditation"}
                     element={<TeachersMeditation />}
                 />
-                <Route exact path="/login" element={<Login />} />
-                <Route exact path="/register" element={<Register />} />
+                <Route exact path={process.env.PUBLIC_URL + "/login"} element={<Login />} />
+                <Route exact path={process.env.PUBLIC_URL + "/register"} element={<Register />} />
             </Routes>
             <Footer />
         </Router>
