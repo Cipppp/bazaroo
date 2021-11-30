@@ -15,36 +15,36 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
             <Routes>
-                <Route exact path={process.env.PUBLIC_URL + "/"} element={<Homepage />} />
+                <Route exact path="/" element={<Homepage />} />
                 <Route
                     exact
-                    path={process.env.PUBLIC_URL + "/dashboard/students"}
+                    path="/dashboard/students"
                     element={<DashboardStudents />}
                 />
                 <Route
                     exact
-                    path={process.env.PUBLIC_URL + "/dashboard/students/enroll"}
+                    path="/dashboard/students/enroll"
                     element={<EnrollStudents />}
                 />
                 <Route
                     exact
-                    path={process.env.PUBLIC_URL + "/dashboard/students/meditation"}
+                    path="/dashboard/students/meditation"
                     element={<StudentsMeditation />}
                 />
                 <Route
                     exact
-                    path={process.env.PUBLIC_URL + "/dashboard/teachers"}
+                    path="/dashboard/teachers"
                     element={<DashboardTeachers />}
                 />
                 <Route
                     exact
-                    path={process.env.PUBLIC_URL + "/dashboard/teachers/meditation"}
+                    path="/dashboard/teachers/meditation"
                     element={<TeachersMeditation />}
                 />
-                <Route exact path={process.env.PUBLIC_URL + "/login"} element={<Login />} />
-                <Route exact path={process.env.PUBLIC_URL + "/register"} element={<Register />} />
+                <Route exact path="/login" element={<Login />} />
+                <Route exact path="/register" element={<Register />} />
             </Routes>
             <Footer />
         </Router>
