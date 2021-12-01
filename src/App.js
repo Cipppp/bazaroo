@@ -17,34 +17,34 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route exact path="/" element={<Homepage />} />
+                <Route exact path="/bazaroo/" element={<Homepage />} />
                 <Route
                     exact
-                    path="/dashboard/students"
+                    path="/bazaroo/dashboard/students"
                     element={<DashboardStudents />}
                 />
                 <Route
                     exact
-                    path="/dashboard/students/enroll"
+                    path="/bazaroo/dashboard/students/enroll"
                     element={<EnrollStudents />}
                 />
                 <Route
                     exact
-                    path="/dashboard/students/meditation"
+                    path="/bazaroo/dashboard/students/meditation"
                     element={<StudentsMeditation />}
                 />
                 <Route
                     exact
-                    path="/dashboard/teachers"
+                    path="/bazaroo/dashboard/teachers"
                     element={<DashboardTeachers />}
                 />
                 <Route
                     exact
-                    path="/dashboard/teachers/meditation"
+                    path="/bazaroo/dashboard/teachers/meditation"
                     element={<TeachersMeditation />}
                 />
-                <Route exact path="/login" element={<Login />} />
-                <Route exact path="/register" element={<Register />} />
+                <Route exact path="/bazaroo/login" element={<Login />} />
+                <Route exact path="/bazaroo/register" element={<Register />} />
             </Routes>
             <Footer />
         </Router>
