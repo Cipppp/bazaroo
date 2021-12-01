@@ -15,32 +15,33 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/bazaroo">
             <Routes>
-                <Route path="/bazaroo/" element={<Homepage />} />
+                <Route path="/" element={<Homepage />} />
                 <Route
                     exact
-                    path="/bazaroo/dashboard/students"
+                    path="/dashboard/students"
                     element={<DashboardStudents />}
                 />
                 <Route
-                    path="/bazaroo/dashboard/students/enroll"
+                    path="/dashboard/students/enroll"
                     element={<EnrollStudents />}
                 />
                 <Route
-                    path="/bazaroo/dashboard/students/meditation"
+                    path="/dashboard/students/meditation"
                     element={<StudentsMeditation />}
                 />
                 <Route
-                    path="/bazaroo/dashboard/teachers"
+                    path="/dashboard/teachers"
                     element={<DashboardTeachers />}
                 />
                 <Route
-                    path="/bazaroo/dashboard/teachers/meditation"
+                    path="/dashboard/teachers/meditation"
                     element={<TeachersMeditation />}
                 />
-                <Route path="/bazaroo/login" element={<Login />} />
-                <Route path="/bazaroo/register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                {/* <Route element=element={<Register />} /> */}
             </Routes>
             <Footer />
         </Router>

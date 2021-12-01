@@ -821,8 +821,16 @@ video {
   align-self: flex-end;
 }
 
+.overflow-auto{
+  overflow: auto;
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-y-hidden{
+  overflow-y: hidden;
 }
 
 .rounded-3xl{

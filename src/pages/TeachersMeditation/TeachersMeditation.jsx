@@ -10,8 +10,6 @@ import useWindowDimensions from '../../components/hooks/useWindowDimensions';
 import { BiBookAlt } from 'react-icons/bi';
 import { FaPlus } from 'react-icons/fa';
 
-
-
 function TeachersMeditation() {
     // eslint-disable-next-line
     const { height, width } = useWindowDimensions();
