@@ -22,7 +22,7 @@ function CarouselComp() {
 
     return (
         <div>
-            <div className="flex justify-start items-center">
+            <div className="flex justify-start items-center ">
                 <h1 className="font-josefin ml-10 mb-2 text-2xl">
                     Ce zic utilizatorii?
                 </h1>

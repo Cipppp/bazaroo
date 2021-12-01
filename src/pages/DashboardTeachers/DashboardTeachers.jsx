@@ -12,7 +12,7 @@ function Dashboard() {
             title: 'Meditatie',
             path: '/dashboard/teachers/meditation',
             icon: <BiBookAlt />,
-            cName: 'nav-text',
+            cName: 'nav-text ',
         },
     ];
     return (

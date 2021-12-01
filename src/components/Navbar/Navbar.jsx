@@ -18,7 +18,7 @@ function Navbar({ sidebar_data }) {
                             >
                                 <Link
                                     to={item.path}
-                                    className="flex items-center justify-center"
+                                    className="flex items-center justify-center  focus:outline-none"
                                 >
                                     <span>{item.title}</span>
                                 </Link>

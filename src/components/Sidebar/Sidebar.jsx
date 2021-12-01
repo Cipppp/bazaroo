@@ -17,12 +17,12 @@ function Sidebar({ sidebar_data }) {
                 <div className="navbar flex justify-between pl-4 pr-4 shadow-xs">
                     <Link
                         to="/"
-                        className="text-black font-bold font-josefin text-3xl flex "
+                        className="text-black font-bold font-josefin text-3xl flex  focus:outline-none "
                     >
                         Bazaroo
                     </Link>
 
-                    <Link to="#" className="menu-bars">
+                    <Link to="#" className="menu-bars  focus:outline-none">
                         <FaBars
                             onClick={showSidebar}
                             style={{ color: 'black' }}
@@ -31,8 +31,11 @@ function Sidebar({ sidebar_data }) {
 
                     <nav className={sidebar ? 'nav-menu active ' : 'nav-menu'}>
                         <ul className="nav-menu-items" onClick={showSidebar}>
-                            <li className="navbar-toggle ">
-                                <Link to="#" className="menu-bars ml-6">
+                            <li className="navbar-toggle  focus:outline-none">
+                                <Link
+                                    to="#"
+                                    className="menu-bars ml-6  focus:outline-none"
+                                >
                                     <AiOutlineClose className="mt-10" />
                                 </Link>
                             </li>
@@ -41,7 +44,7 @@ function Sidebar({ sidebar_data }) {
                                     <li key={index} className={item.cName}>
                                         <Link
                                             to={item.path}
-                                            className="flex items-center justify-center"
+                                            className="flex items-center justify-center  focus:outline-none"
                                         >
                                             {item.icon}
                                             <span className="nav-span">

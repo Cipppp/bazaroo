@@ -9,6 +9,7 @@
     align-items: center;
     z-index: 1000;
     font-family: 'Josefin Sans';
+    outline: none;
 }
 
 .menu-bars {
