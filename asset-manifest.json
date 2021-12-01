@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/bazaroo/static/css/main.e4767760.chunk.css",
-    "main.js": "/bazaroo/static/js/main.fbaeb5c3.chunk.js",
-    "main.js.map": "/bazaroo/static/js/main.fbaeb5c3.chunk.js.map",
+    "main.js": "/bazaroo/static/js/main.a69b6527.chunk.js",
+    "main.js.map": "/bazaroo/static/js/main.a69b6527.chunk.js.map",
     "runtime-main.js": "/bazaroo/static/js/runtime-main.fd297276.js",
     "runtime-main.js.map": "/bazaroo/static/js/runtime-main.fd297276.js.map",
-    "static/js/2.00fac845.chunk.js": "/bazaroo/static/js/2.00fac845.chunk.js",
-    "static/js/2.00fac845.chunk.js.map": "/bazaroo/static/js/2.00fac845.chunk.js.map",
+    "static/js/2.3ae071b5.chunk.js": "/bazaroo/static/js/2.3ae071b5.chunk.js",
+    "static/js/2.3ae071b5.chunk.js.map": "/bazaroo/static/js/2.3ae071b5.chunk.js.map",
     "static/js/3.d869f266.chunk.js": "/bazaroo/static/js/3.d869f266.chunk.js",
     "static/js/3.d869f266.chunk.js.map": "/bazaroo/static/js/3.d869f266.chunk.js.map",
     "index.html": "/bazaroo/index.html",
     "static/css/main.e4767760.chunk.css.map": "/bazaroo/static/css/main.e4767760.chunk.css.map",
-    "static/js/2.00fac845.chunk.js.LICENSE.txt": "/bazaroo/static/js/2.00fac845.chunk.js.LICENSE.txt",
+    "static/js/2.3ae071b5.chunk.js.LICENSE.txt": "/bazaroo/static/js/2.3ae071b5.chunk.js.LICENSE.txt",
     "static/media/Homepage.css": "/bazaroo/static/media/contact.9f53977e.svg",
     "static/media/facebook.5d603891.svg": "/bazaroo/static/media/facebook.5d603891.svg",
     "static/media/EnrollStudents.css": "/bazaroo/static/media/footer.38a7be5e.svg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fd297276.js",
-    "static/js/2.00fac845.chunk.js",
+    "static/js/2.3ae071b5.chunk.js",
     "static/css/main.e4767760.chunk.css",
-    "static/js/main.fbaeb5c3.chunk.js"
+    "static/js/main.a69b6527.chunk.js"
   ]
 }
